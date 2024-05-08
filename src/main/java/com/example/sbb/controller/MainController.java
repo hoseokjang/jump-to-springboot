@@ -12,4 +12,10 @@ public class MainController {
 	public String index() {
 		return "안녕하세요. 메인 화면 입니다.";
 	}
+	
+	@GetMapping("/")
+	public String root() {
+		return "redirect:/question/list";
+	}
+	
 }
